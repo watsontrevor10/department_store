@@ -1,0 +1,7 @@
+<h1><%= @department.id ? 'Edit' : 'Create' %></h1>
+<hr />
+<%= form_for @department do |f| %>
+  <%= f.label :department_name %>
+  <%= f.text_field :department_name, required: true, autofocus: true %>
+  <%= f.submit %>
+<% end %>
