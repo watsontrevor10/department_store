@@ -1,6 +1,5 @@
 class DepartmentsController < ApplicationController
   before_action :set_department, except: [:index, :new, :create]
-  #before_action :department_form, only: [:new, :edit]
 
   def index
     @departments = Department.all
@@ -54,7 +53,4 @@ class DepartmentsController < ApplicationController
     @department = Department.find(params[:id])
   end
 
-  # def department_form
-  #   render partial: "form"
-  # end
 end

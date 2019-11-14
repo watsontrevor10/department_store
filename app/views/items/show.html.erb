@@ -3,5 +3,6 @@
 <p>Price: <%= @item.price %></p>
 <p>Quantity: <%= @item.quantity %></p>
 <p>Description: <%= @item.description %></p>
-<%= link_to 'Add Inventory Item', new_department_item_path(@department)%>
-<%= link_to 'Go Back', department_items_path(@department) %>
+<button><%= link_to 'Add Item', new_department_item_path(@department)%></button>
+<button><%= link_to 'Edit Item', edit_department_item_path(@department, @item)%></button>
+<button><%= link_to 'Go Back', department_items_path(@department) %></button>

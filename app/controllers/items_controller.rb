@@ -33,7 +33,7 @@ class ItemsController < ApplicationController
 
   def update 
     if @item.update(item_params)
-      redirect_to department_items_path(@department)
+      redirect_to department_item_path(@department)
     else 
       render :edit 
     end
