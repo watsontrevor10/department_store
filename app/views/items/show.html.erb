@@ -1,0 +1,7 @@
+<h1>Item Details</h1>
+<h2><%= @item.item_name %></h2>
+<p>Price: <%= @item.price %></p>
+<p>Quantity: <%= @item.quantity %></p>
+<p>Description: <%= @item.description %></p>
+<%= link_to 'Add Inventory Item', new_department_item_path(@department)%>
+<%= link_to 'Go Back', department_items_path(@department) %>

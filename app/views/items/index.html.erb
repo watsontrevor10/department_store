@@ -1,6 +1,6 @@
 <h1><%= @department.department_name %></h1>
 <hr />
-<h2>Available Inventory</h2>
+<h2>Inventory</h2>
 <table>
     <tr>
     <th>Name</th>
@@ -18,8 +18,5 @@
 <% end %>
 </table>
 <hr />
-<button><%= link_to 'Go Back', departments_path %></button>
-<button><%= link_to 'Edit Department', edit_department_path(@department) %></button>
-<button><%= link_to 'View Inventory', department_items_path(@department) %></button>
-<button><%= link_to 'Add Inventory Item', new_department_item_path(@department)%></button>
-<button><%= link_to 'Delete', @department, method: :delete %></button>
+<%= link_to 'Go Back', department_path(@department) %>
+<%= link_to 'Add Inventory Item', new_department_item_path(@department)%>
